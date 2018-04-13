@@ -24,7 +24,7 @@ public class Controller {
 
     public void encryptAction(ActionEvent e) {
         resultText.setText(Integer.toString(encryptNumericValues()));
-        
+
 
     }
 
@@ -50,6 +50,5 @@ public class Controller {
 
 
 /*
-TODO: subract from numbers so that its integers. this will hopefully not make the numbers astronomical.
 TODO: ALSO fix so that all letters are taken into consideration. Not just the last one
- */
+*/
