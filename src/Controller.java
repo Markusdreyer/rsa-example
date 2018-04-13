@@ -23,23 +23,33 @@ public class Controller {
 
 
     public void encryptAction(ActionEvent e) {
+        resultText.setText(Integer.toString(encryptNumericValues()));
+        
 
-        resultText.setText(Double.toString(encryptNumericValues()));
     }
 
     public int[] generateNumericArray() {
         for(char ch : textField.getText().toCharArray()) {
-            numericValues.add(Character.getNumericValue(ch));
+            numericValues.add(Character.getNumericValue(ch) - 9);
         }
         numericArray = numericValues.stream().mapToInt(i -> i).toArray();
+        System.out.println(Arrays.toString(numericArray));
         return numericArray;
     }
 
-    public double encryptNumericValues() {
+    /*The RSA encryption formula (m^pK % n) where m is the numerical value of each letter in the message, pK is the generated privateKey and n is TODO: what is n?*/
+    public int encryptNumericValues() {
         for (int i : generateNumericArray()) {
-            encryptedMessage = Math.pow(i,key[0] % key[1]);
-    }
-        return encryptedMessage;
+            encryptedMessage = (Math.pow(i,key[0]) % key[1]);
+        }
+
+        return (int) encryptedMessage;
     }
     //System.out.println(Math.pow(2,5) % 14);
 }
+
+
+/*
+TODO: subract from numbers so that its integers. this will hopefully not make the numbers astronomical.
+TODO: ALSO fix so that all letters are taken into consideration. Not just the last one
+ */
