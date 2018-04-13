@@ -18,10 +18,13 @@ public class Controller {
 
     private ArrayList<Integer> numericValues = new ArrayList<>();
     private int[] numericArray;
+    private int[] key = {5, 14};
+    private double encryptedMessage;
 
 
     public void encryptAction(ActionEvent e) {
-        resultText.setText(Arrays.toString(generateNumericArray()));
+
+        resultText.setText(Double.toString(encryptNumericValues()));
     }
 
     public int[] generateNumericArray() {
@@ -32,4 +35,11 @@ public class Controller {
         return numericArray;
     }
 
+    public double encryptNumericValues() {
+        for (int i : generateNumericArray()) {
+            encryptedMessage = Math.pow(i,key[0] % key[1]);
+    }
+        return encryptedMessage;
+    }
+    //System.out.println(Math.pow(2,5) % 14);
 }
