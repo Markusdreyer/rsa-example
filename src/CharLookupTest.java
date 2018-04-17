@@ -1,4 +1,4 @@
-public class Test {
+public class CharLookupTest {
     public static void main(String[] args) {
 
         int remainder = 1;

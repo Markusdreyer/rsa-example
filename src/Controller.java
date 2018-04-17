@@ -6,6 +6,7 @@ import javafx.scene.text.Text;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Random;
 
 
 public class Controller {
@@ -18,13 +19,12 @@ public class Controller {
 
     private ArrayList<Integer> numericValues = new ArrayList<>();
     private int[] numericArray;
-    private int[] key = {5, 14};
+    private int p, q, n;
     private double encryptedMessage;
 
 
     public void encryptAction(ActionEvent e) {
         resultText.setText(Integer.toString(encryptNumericValues()));
-
 
     }
 
@@ -40,12 +40,28 @@ public class Controller {
     /*The RSA encryption formula (m^pK % n) where m is the numerical value of each letter in the message, pK is the generated privateKey and n is TODO: what is n?*/
     public int encryptNumericValues() {
         for (int i : generateNumericArray()) {
-            encryptedMessage = (Math.pow(i,key[0]) % key[1]);
+            encryptedMessage = (Math.pow(i,p) % q);
         }
 
         return (int) encryptedMessage;
     }
     //System.out.println(Math.pow(2,5) % 14);
+
+    public int generatePrimeNumber() {
+        Random random = new Random();
+        int min = 10000000;
+        int max = 1000000000;
+        int p = random.nextInt((max - min) + 1) + min;
+        return p;
+    }
+
+    public void generateKeypair() {
+        p = generatePrimeNumber();
+        q = generatePrimeNumber();
+        n = (p * q);
+
+        System.out.println("P:" + p +"\nQ: " + q + "\nN: " + n);
+    }
 }
 
 

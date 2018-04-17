@@ -64,6 +64,7 @@ public class Main extends Application {
     public static void main(String[] args) {
         //System.out.println(Math.pow(2,5) % 14);
         launch(args);
+
     }
 
 }
