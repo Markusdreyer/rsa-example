@@ -13,7 +13,7 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
    <children>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" height="400.0" layoutX="-14.0" stroke="BLACK" strokeType="INSIDE" width="600.0">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="400.0" stroke="BLACK" strokeType="INSIDE" width="600.0">
          <fill>
             <LinearGradient endX="1.0" endY="1.0">
                <stops>
@@ -23,14 +23,37 @@
             </LinearGradient>
          </fill>
       </Rectangle>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="44.0" layoutX="70.0" layoutY="151.0" stroke="BLACK" strokeType="INSIDE" width="355.0" />
-      <Button fx:id="encryptBtn" layoutX="181.0" layoutY="272.0" mnemonicParsing="false" onAction="#encryptAction" text="Encrypt" />
-      <TextField fx:id="textField" layoutX="181.0" layoutY="222.0" promptText="type here" />
-      <Text fx:id="resultText" layoutX="78.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="339.0">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="44.0" layoutX="78.0" layoutY="227.0" stroke="BLACK" strokeType="INSIDE" width="355.0" />
+      <Button layoutX="189.0" layoutY="348.0" mnemonicParsing="false" onAction="#encryptAction" text="Encrypt" />
+      <TextField fx:id="textField" layoutX="189.0" layoutY="298.0" promptText="type here" />
+      <Text fx:id="resultText" layoutX="86.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="339.0">
          <font>
             <Font size="19.0" />
          </font>
       </Text>
-      <Button fx:id="decryptBtn" layoutX="277.0" layoutY="272.0" mnemonicParsing="false" text="Decrypt" />
+      <Button layoutX="285.0" layoutY="348.0" mnemonicParsing="false" text="Decrypt" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="27.0" layoutX="141.0" layoutY="46.0" stroke="BLACK" strokeType="INSIDE" width="355.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="27.0" layoutX="141.0" layoutY="82.0" stroke="BLACK" strokeType="INSIDE" width="355.0" />
+      <Text fx:id="privateKeyField" layoutX="149.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="339.0">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <Text fx:id="publicKeyField" layoutX="149.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="339.0">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="37.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Private Key" wrappingWidth="109.0">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="37.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Public Key" wrappingWidth="98.0">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <Button layoutX="241.0" layoutY="123.0" mnemonicParsing="false" onAction="#generateKeypair" text="Generate Keypair" />
    </children>
 </AnchorPane>

@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab0bd457-2455-406d-ad1a-b46447c95c92" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/rsa-example/Controller.class" afterPath="$PROJECT_DIR$/out/production/rsa-example/Controller.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/rsa-example/Main.class" afterPath="$PROJECT_DIR$/out/production/rsa-example/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/rsa-example/PrimeNumberTest.class" afterPath="$PROJECT_DIR$/out/production/rsa-example/PrimeNumberTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/CalculatePhiTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/rsa-example/GUI.fxml" afterPath="$PROJECT_DIR$/out/production/rsa-example/GUI.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller.java" afterPath="$PROJECT_DIR$/src/Controller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GUI.fxml" afterPath="$PROJECT_DIR$/src/GUI.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PrimeNumberTest.java" afterPath="$PROJECT_DIR$/src/PrimeNumberTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,7 +27,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="733">
@@ -42,6 +35,16 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CalculatePhiTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/CalculatePhiTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -93,6 +96,7 @@
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/GUI.fxml" />
         <option value="$PROJECT_DIR$/src/Controller.java" />
+        <option value="$PROJECT_DIR$/src/CalculatePhiTest.java" />
       </list>
     </option>
   </component>
@@ -166,7 +170,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.CalculatePhiTest">
+    <configuration name="CalculatePhiTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="CalculatePhiTest" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="rsa-example" />
+      <envs />
+    </configuration>
     <configuration name="CharLookupTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="CharLookupTest" />
@@ -289,16 +307,18 @@
       <properties />
       <listeners />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Application.Main" />
       <item index="1" class="java.lang.String" itemvalue="Application.CharLookupTest" />
       <item index="2" class="java.lang.String" itemvalue="Application.PrimeNumberTest" />
+      <item index="3" class="java.lang.String" itemvalue="Application.CalculatePhiTest" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Application.Main" />
-        <item index="1" class="java.lang.String" itemvalue="Application.PrimeNumberTest" />
-        <item index="2" class="java.lang.String" itemvalue="Application.CharLookupTest" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Application.CalculatePhiTest" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Main" />
+        <item index="2" class="java.lang.String" itemvalue="Application.PrimeNumberTest" />
+        <item index="3" class="java.lang.String" itemvalue="Application.CharLookupTest" />
       </list>
     </recent_temporary>
   </component>
@@ -319,12 +339,12 @@
       <workItem from="1523987636261" duration="12000" />
       <workItem from="1523987823493" duration="13000" />
       <workItem from="1523987890276" duration="5314000" />
-      <workItem from="1524131103870" duration="2450000" />
+      <workItem from="1524131103870" duration="3208000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21790000" />
+    <option name="totallyTimeSpent" value="22548000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -646,8 +666,8 @@
           <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#574#575#0" expanded="true" />
-            <element signature="e#627#628#0" expanded="true" />
+            <element signature="e#574#575#0" expanded="false" />
+            <element signature="e#627#628#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -688,6 +708,14 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CalculatePhiTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
