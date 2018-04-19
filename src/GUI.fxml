@@ -24,36 +24,26 @@
          </fill>
       </Rectangle>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="44.0" layoutX="78.0" layoutY="227.0" stroke="BLACK" strokeType="INSIDE" width="355.0" />
-      <Button layoutX="189.0" layoutY="348.0" mnemonicParsing="false" onAction="#encryptAction" text="Encrypt" />
-      <TextField fx:id="textField" layoutX="189.0" layoutY="298.0" promptText="type here" />
+      <Button fx:id="encryptBtn" layoutX="189.0" layoutY="348.0" mnemonicParsing="false" onAction="#encryptAction" text="Encrypt" />
+      <TextField fx:id="textField" layoutX="189.0" layoutY="298.0" promptText="type message here" />
       <Text fx:id="resultText" layoutX="86.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="339.0">
          <font>
             <Font size="19.0" />
          </font>
       </Text>
-      <Button layoutX="285.0" layoutY="348.0" mnemonicParsing="false" text="Decrypt" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="27.0" layoutX="141.0" layoutY="46.0" stroke="BLACK" strokeType="INSIDE" width="355.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="27.0" layoutX="141.0" layoutY="82.0" stroke="BLACK" strokeType="INSIDE" width="355.0" />
-      <Text fx:id="privateKeyField" layoutX="149.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="339.0">
+      <Button fx:id="decryptBtn" layoutX="285.0" layoutY="348.0" mnemonicParsing="false" text="Decrypt" />
+      <Text layoutX="53.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Private Key" wrappingWidth="66.0">
          <font>
-            <Font size="19.0" />
+            <Font size="12.0" />
          </font>
       </Text>
-      <Text fx:id="publicKeyField" layoutX="149.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="339.0">
+      <Text layoutX="53.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Public Key" wrappingWidth="66.0">
          <font>
-            <Font size="19.0" />
+            <Font size="12.0" />
          </font>
       </Text>
-      <Text layoutX="37.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Private Key" wrappingWidth="109.0">
-         <font>
-            <Font size="19.0" />
-         </font>
-      </Text>
-      <Text layoutX="37.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Public Key" wrappingWidth="98.0">
-         <font>
-            <Font size="19.0" />
-         </font>
-      </Text>
-      <Button layoutX="241.0" layoutY="123.0" mnemonicParsing="false" onAction="#generateKeypair" text="Generate Keypair" />
+      <Button fx:id="generateKeypairBtn" layoutX="241.0" layoutY="123.0" mnemonicParsing="false" onAction="#encryptAction" text="Generate Kepair" />
+      <TextField fx:id="privateKeyField" layoutX="127.0" layoutY="44.0" prefHeight="27.0" prefWidth="308.0" promptText="type here" />
+      <TextField fx:id="publicKeyField" layoutX="125.0" layoutY="87.0" prefHeight="27.0" prefWidth="308.0" promptText="type here" />
    </children>
 </AnchorPane>

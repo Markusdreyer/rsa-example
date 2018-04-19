@@ -12,9 +12,9 @@ import java.util.Random;
 
 public class Controller {
     @FXML
-    private TextField textField;
+    private TextField textField, privateKeyField, publicKeyField;
     @FXML
-    private Text resultText, privateKeyField, publicKeyField;
+    private Text resultText;
 
     private ArrayList<Integer> numericValues = new ArrayList<>();
     private int[] numericArray;

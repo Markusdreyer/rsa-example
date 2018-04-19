@@ -4,9 +4,11 @@ public class CalculatePhiTest {
         int p = 123;
         int q = 456;
         int n = p * q;
-        int phiOfN = (p - 1) * (q - 1);
-        System.out.println("Phi of N: " + phiOfN + "\nN: " + n);
-        System.out.println("\n" + totient(n));
+        int phiOfN = totient(n);
+        int e;
+        int i = 2;
+        System.out.println("P: " +  p + "\nQ: " + q + "\nN: " + n + "\nPhi of N: " + totient(n));
+        System.out.println("E: "  + Integer.toString(GetGCDByModulus(i,n)));
     }
 
     public static int totient(int num){ //euler's totient function calculator. returns totient
@@ -31,7 +33,20 @@ public class CalculatePhiTest {
         return(GCD(a%b,b));
     }
 
+    public static int GetGCDByModulus(int n, int phiOfN) {
+
+        while (n != 0 && phiOfN != 0)
+        {
+            if (n > phiOfN)
+                n %= phiOfN;
+            else
+                phiOfN %= n;
+        }
+        return Math.max(n, phiOfN);
+    }
+
     /*
     TODO: Fix Eulers Totient
+    TODO: Find e (Coprime with n & phiOfN)
      */
 }
