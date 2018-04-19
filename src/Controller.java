@@ -11,17 +11,20 @@ import java.util.Random;
 
 public class Controller {
     @FXML
-    private Button encryptBtn, decryptBtn;
-    @FXML
     private TextField textField;
     @FXML
-    private Text resultText;
+    private Text resultText, privateKeyField, publicKeyField;
 
     private ArrayList<Integer> numericValues = new ArrayList<>();
     private int[] numericArray;
     private int p, q, n;
     private double encryptedMessage;
 
+
+    public void generateKeypair(ActionEvent e) {
+        generateKeypair();
+        privateKeyField.setText(Integer.toString(p));
+    }
 
     public void encryptAction(ActionEvent e) {
         resultText.setText(Integer.toString(encryptNumericValues()));
@@ -67,4 +70,5 @@ public class Controller {
 
 /*
 TODO: ALSO fix so that all letters are taken into consideration. Not just the last one
+TODO: Generate KEYPAIR
 */
