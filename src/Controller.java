@@ -53,8 +53,8 @@ public class Controller {
 
     public int generatePrimeNumber() {
         Random random = new Random();
-        int min = 10000000;
-        int max = 1000000000;
+        int min = 100;
+        int max = 1000;
         int p = random.nextInt((max - min) + 1) + min;
         return p;
     }
